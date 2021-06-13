@@ -16,10 +16,38 @@
 
     <br><br>
 
+    <!-- Alinhamento responsivo
+    class text-<tela>-<alinhamento>
+        tela: sm, md, lg, xl
+        alinhamento: left, center, right -->
+    <p class="text-sm-right">tela &gt;= 576px</p> <!-- small -->
+    <p class="text-md-center">tela &gt;= 768px</p> <!-- medium -->
+    <p class="text-lg-right">tela &gt;= 992px</p> <!-- large -->
+    <p class="text-xl-center">tela &gt;= 1200px</p> <!-- extra large -->
+
+    <br><br>
+
+    <!-- Elemento block para inline -->
+    <!-- block(ocupa todo o espaço do elemento, ocupa toda a linha) -->
+    <!-- inline(ocupa somente o seu tamanho, um elemento após o outro) -->
+    <h1 class="bg-success  d-inline">Lorem ipsum dolor sit amet.</h1>
+    <p class="bg-primary d-inline">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, magni! Sapiente quos modi assumenda sequi.</p>
+
+    <br><br>
+
+    <!-- Elemento inline para block -->
+    <span class="bg-success d-block">Lorem ipsum dolor sit amet.</span>
+    <span class="bg-primary d-block">Lorem ipsum dolor sit amet.</span>
+
+    <br><br>
+
+    <!-- Elemento inline-block -->
+    <!-- inline-block -->
+    <div class="bg-warning">
+        <h3 class="bg-success d-inline-block">Lorem ipsum</h3>
+        <h3 class="bg-primary d-inline-block" style="margin-top: 50px; width: 400px;" >Lorem ipsum dolor</h3>
+    </div>
     
-
-
-
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
