@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos flutuantes</title>
+
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body style="margin-bottom: 200px; padding: 16px;">
+
+    <!-- elementos flutuantes -->
+    <!-- class clearfix(limpa o fluxo do elemento) -->
+    <div style="border: 1px solid red;" class="clearfix">
+        <div class="bg-success float-left" >Float Left</div>
+        <div class="bg-warning float-right">Float Right</div>
+    </div>
+
+    <br><br>
+
+    <!-- Posicionamento fixo - top e bottom -->
+    <!-- por mais que ultilize a barra de rolagem o conteudo ficara fixo -->
+    <h1 class="fixed-top">Título do conteudo fixo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis labore excepturi asperiores sint, ex cumque ipsa quisquam. Molestias sunt nulla dolorum iure dolor, esse veritatis distinctio fugiat suscipit optio nesciunt rerum unde aspernatur dolorem praesentium quaerat ipsum nihil iste voluptas eligendi non nam id? Optio quibusdam cum qui neque voluptatum sunt sit fugit laudantium consequuntur libero dolorum nihil, animi natus saepe totam nisi, ipsum corporis mollitia molestiae, vel omnis. Expedita tenetur libero pariatur? Eveniet impedit reiciendis repellendus placeat saepe obcaecati ipsa possimus esse architecto? Veritatis, eius accusantium? Quidem ducimus quos ab provident, doloribus molestiae perspiciatis iste consequuntur dicta architecto?</p>
+
+    <br><br>
+
+    <!-- float responsivo 
+    float-<tela>-<direcao>
+        tela: sm, md, lg, xl
+        alinhamento: left, right -->
+    <div class="float-sm-right">tela &gt;= 576px *</div> <!-- small -->
+    <div class="float-md-right">tela &gt;= 768px *</div> <!-- medium -->
+    <div class="float-lg-right">tela &gt;= 992px *</div> <!-- large -->
+    <div class="float-xl-right">tela &gt;= 1200px *</div> <!-- extra large -->
+
+    <br><br>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, maxime recusandae numquam blanditiis nobis earum fugit aperiam tempore. Consectetur voluptatum aperiam nam, omnis at praesentium obcaecati quo ab ipsa blanditiis ullam, cum ipsam debitis consequuntur culpa nihil quis velit pariatur nesciunt. Unde, eos cupiditate in eveniet quia laborum ab veritatis, nam libero, aliquam officiis doloremque sunt dolore! Excepturi ipsam, officiis illo consectetur qui voluptatum fugiat laboriosam hic molestias pariatur! Veritatis delectus veniam ratione debitis non illum officia, consectetur voluptatibus tempora voluptatum, ipsa ut, obcaecati quibusdam! Repellat, nihil soluta, molestiae autem perspiciatis nemo distinctio iure illum tempora, ad rem similique quae?</p>
+
+    <br><br>
+
+    <!-- colar no topo (sticky) -->
+    <!-- quando o site chegar onde foi desejado ele irá colar -->
+    <ul class="list-inline bg-warning sticky-top">
+        <li class="list-inline-item">Item 1</li>
+        <li class="list-inline-item">Item 2</li>
+        <li class="list-inline-item">Item 3</li>
+    </ul>
+
+    <h1>Título do conteúdo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi non atque earum rerum suscipit ducimus beatae nihil dolorum incidunt dicta alias aliquam at eius, voluptatibus sequi, repellendus voluptate, reiciendis laborum consequuntur maxime! Sunt quos fuga aliquid assumenda pariatur, aut nesciunt quae culpa ipsum minus reprehenderit. Fugiat similique reiciendis illo suscipit. Quisquam laboriosam nesciunt tempore minus facere itaque enim eaque ut suscipit omnis? Tempora harum, accusamus iure, beatae ab vel id deleniti molestias fugiat maxime officia odit ducimus quas eveniet corporis explicabo amet numquam consectetur consequatur? Esse commodi expedita delectus aliquid, necessitatibus quisquam ipsum maxime iure voluptas vero quidem itaque libero.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste soluta, eum aliquid iure unde consequuntur ab eos labore eveniet officiis doloribus, eligendi corporis deleniti dolorem possimus laudantium aspernatur sed exercitationem, sint ratione totam fuga laborum voluptates non. Hic dolorum in odio beatae ipsa, officiis quo dolore architecto nesciunt, ullam doloribus.
+    </p>
+    <h1>Título do conteúdo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi non atque earum rerum suscipit ducimus beatae nihil dolorum incidunt dicta alias aliquam at eius, voluptatibus sequi, repellendus voluptate, reiciendis laborum consequuntur maxime! Sunt quos fuga aliquid assumenda pariatur, aut nesciunt quae culpa ipsum minus reprehenderit. Fugiat similique reiciendis illo suscipit. Quisquam laboriosam nesciunt tempore minus facere itaque enim eaque ut suscipit omnis? Tempora harum, accusamus iure, beatae ab vel id deleniti molestias fugiat maxime officia odit ducimus quas eveniet corporis explicabo amet numquam consectetur consequatur? Esse commodi expedita delectus aliquid, necessitatibus quisquam ipsum maxime iure voluptas vero quidem itaque libero.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste soluta, eum aliquid iure unde consequuntur ab eos labore eveniet officiis doloribus, eligendi corporis deleniti dolorem possimus laudantium aspernatur sed exercitationem, sint ratione totam fuga laborum voluptates non. Hic dolorum in odio beatae ipsa, officiis quo dolore architecto nesciunt, ullam doloribus.
+    </p>
+
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>
