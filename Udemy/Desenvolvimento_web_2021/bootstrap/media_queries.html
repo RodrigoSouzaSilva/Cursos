@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries - Breakpoints</title>
+
+    <style>
+
+        /* small devices (landscape phones) */
+        @media(min-width:576px){}
+
+        /* medium devices (tablets, 768px e superior) */
+        @media(min-width:768px){}
+
+        /* large devices (desktops, 992px e superiores) */
+        @media(min-width:992px){}
+
+        /* extra  large devices (large desktop, 1200px e superior) */
+        @media(min-width:1200px){}
+
+
+        /* **************************************** */
+        /* Extra small devices (portraint phones)  */
+        @media(max-width:575.98px){
+            body{
+                background: indigo;
+            }
+        }
+
+        /* small devices (landscape phones) */
+        @media (min-width:576px) and (max-width:767.98px){
+            body{
+                background: red;
+            }
+        }
+
+        /* medium devices (tablets) */
+        @media (min-width:768px) and (max-width:991.98px){
+            body{
+                background: blue;
+            }
+        }
+
+        /* large devices (desktops) */
+        @media (min-width:992px) and (max-width:1199.98px){
+            body{
+                background: green;
+            }
+        }
+
+        /* extra large devices (large desktops, 1200px e superior) */
+        @media (min-width:1200px){
+            body{
+                background: yellow;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+</body>
+</html>
