@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de navegação</title>
+
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body style="padding-bottom: 200px; width: 600px;margin: 0 auto;">
+    
+    <!-- Navegação
+    tipos de navegação:
+    nav-pills(pilulas)
+    nav-tabs(abas)
+    opção de alinhamento:
+    justify-content-center
+    justify-content-end
+    flex-column (naegação vertical)
+    disabled (link fica inativo)
+    -->
+    <h2>Navegação simples / abas</h2>
+    <ul class="nav nav-pills flex-column">
+        <li class="nav-item"><a class="nav-link" href="">home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="">sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="">serviços</a></li>
+        <li class="nav-item"><a class="nav-link disabled" href="">link 4</a></li>
+    </ul>
+
+    <br><br>
+
+    <h2>Barra de navegação simples</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- logo -->
+        <a class="navbar-brand" href="">Chalé hotel</a>
+
+        <!-- navegação -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Serviços</a></li>
+        </ul>
+    </nav>
+
+    <br><br>
+
+    <!-- navbar-expand-sm: classe responsavel pela resposividade da barra de navegação, ao colocar sm, só ira aparecer o hamburguer quando a tela for small, ao colocar md, irá aparecer até a tela fica medium e assim sucessivamente -->
+    <h2>Barra de navegação com menu responsivo</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- logo -->
+        <a class="navbar-brand" href="">Chalé Hotel</a>
+
+        <!-- Menu Hamburguer -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navegação -->
+        <div class="collapse navbar-collapse" id="navegacao">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Serviços</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <h2>Barra de navegação com formulário</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- logo -->
+        <a class="navbar-brand" href="">Chalé Hotel</a>
+
+        <!-- Menu Hamburguer -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navegação -->
+        <div class="collapse navbar-collapse" id="navegacao2">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Serviços</a></li>
+            </ul>
+
+            <!-- Formulário -->
+            <form class="form-inline">
+                <input class="form-control" placeholder="pesquisar" type="text">
+                <button class="btn btn-outline-success">OK</button>
+            </form>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <h2>Barra de navegação com menu dropdown</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- logo -->
+        <a class="navbar-brand" href="">Chalé Hotel</a>
+
+        <!-- Menu Hamburguer -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navegação -->
+        <div class="collapse navbar-collapse" id="navegacao3">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Serviços</a>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="">Serviço 1</a>
+                        <a class="dropdown-item" href="">Serviço 2</a>
+                        <a class="dropdown-item" href="">Serviço 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <!-- Cores
+    opção: bg-primary, bg-secondary, bg-success, bg-info,
+    bg-warning, bg-danger, bg-light, bg-dark
+     -->
+    <h2>Cores</h2>
+    <nav class="navbar navbar-expand-sm navbar-light bg-info">
+        <!-- logo -->
+        <a class="navbar-brand" href="">Chalé hotel</a>
+
+        <!-- navegação -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Serviços</a></li>
+        </ul>
+    </nav>
+
+    <br><br>
+
+    <!-- Alinhamentos
+    opção: 
+        fixed-top(ficará fixa no top da pagina),
+        fixed-bottom(ficará fixa no bottom da pagina),
+        sticky(colará no topo quando chegar até ele conforme rola a página)
+     -->
+    <h2>Alinhamentos</h2>
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-info">
+        <!-- logo -->
+        <a class="navbar-brand" href="">Chalé hotel</a>
+
+        <!-- navegação -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Serviços</a></li>
+        </ul>
+    </nav>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere praesentium iusto quos, eveniet repellendus voluptas eos eius rem, placeat obcaecati maxime labore beatae? Reiciendis pariatur alias magni, iste sapiente quis aliquam repudiandae eaque inventore sequi ut fugiat. Placeat, qui doloremque quibusdam odit unde facilis alias! Explicabo officia quam vitae enim.</p>
+    <br>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere praesentium iusto quos, eveniet repellendus voluptas eos eius rem, placeat obcaecati maxime labore beatae? Reiciendis pariatur alias magni, iste sapiente quis aliquam repudiandae eaque inventore sequi ut fugiat. Placeat, qui doloremque quibusdam odit unde facilis alias! Explicabo officia quam vitae enim.</p>
+    <br>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere praesentium iusto quos, eveniet repellendus voluptas eos eius rem, placeat obcaecati maxime labore beatae? Reiciendis pariatur alias magni, iste sapiente quis aliquam repudiandae eaque inventore sequi ut fugiat. Placeat, qui doloremque quibusdam odit unde facilis alias! Explicabo officia quam vitae enim.</p>
+    <br>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere praesentium iusto quos, eveniet repellendus voluptas eos eius rem, placeat obcaecati maxime labore beatae? Reiciendis pariatur alias magni, iste sapiente quis aliquam repudiandae eaque inventore sequi ut fugiat. Placeat, qui doloremque quibusdam odit unde facilis alias! Explicabo officia quam vitae enim.</p>
+    <br>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere praesentium iusto quos, eveniet repellendus voluptas eos eius rem, placeat obcaecati maxime labore beatae? Reiciendis pariatur alias magni, iste sapiente quis aliquam repudiandae eaque inventore sequi ut fugiat. Placeat, qui doloremque quibusdam odit unde facilis alias! Explicabo officia quam vitae enim.</p>
+    <br>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere praesentium iusto quos, eveniet repellendus voluptas eos eius rem, placeat obcaecati maxime labore beatae? Reiciendis pariatur alias magni, iste sapiente quis aliquam repudiandae eaque inventore sequi ut fugiat. Placeat, qui doloremque quibusdam odit unde facilis alias! Explicabo officia quam vitae enim.</p>
+    <br>
+    
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere praesentium iusto quos, eveniet repellendus voluptas eos eius rem, placeat obcaecati maxime labore beatae? Reiciendis pariatur alias magni, iste sapiente quis aliquam repudiandae eaque inventore sequi ut fugiat. Placeat, qui doloremque quibusdam odit unde facilis alias! Explicabo officia quam vitae enim.</p>
+    <br>
+    
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>
