@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas & barra de progresso</title>
+
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body style="padding-bottom: 200px; width: 600px; margin: 0 auto;">
+    
+    <h2>Alertas</h2>
+    <div class="alert alert-primary">
+      <strong>Primary</strong> você tem uma postagem pendente!
+    </div>
+    <div class="alert alert-secondary">
+        <strong>secondary</strong> você tem uma postagem pendente!
+    </div>
+    <div class="alert alert-success">
+        <strong>success</strong> você tem uma postagem pendente!
+    </div>
+    <div class="alert alert-danger">
+        <strong>danger</strong> você tem uma postagem pendente!
+    </div>
+    <div class="alert alert-warning">
+        <strong>warning</strong> você tem uma postagem pendente!
+    </div>
+    <div class="alert alert-info">
+        <strong>info</strong> você tem uma postagem pendente!
+    </div>
+    <div class="alert alert-light">
+        <strong>light</strong> você tem uma postagem pendente!
+    </div>
+    <div class="alert alert-dark">
+        <strong>dark</strong> você tem uma postagem pendente!
+    </div>
+    <br><br>
+    
+    <!-- cria uma barra de alerta com botão de fechar -->
+    <h2>Alerta com botão fechar</h2>
+    <div class="alert alert-success alert-dismissible">
+      <button class="close" type="button" data-dismiss="alert">
+        &times;
+      </button>
+      <strong>Fechar</strong> Alerta com botão fechar
+    </div>
+    <br><br>
+    
+    <h2>Alerta com mais conteúdos</h2>
+    <div class="alert alert-dark">
+      
+      <h4>Título</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a metus in purus malesuada vulputate. Sed lacinia quam massa, eu consectetur tortor faucibus sed.</p>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a metus in purus malesuada vulputate. Sed lacinia quam massa, eu consectetur tortor faucibus sed.</p>
+
+    </div>
+    <br><br>
+
+    <!-- barra de progressos(estilo barra de upload) -->
+    <h2>Barra de progresso</h2>
+    <div class="progress">
+      <div class="progress-bar" style="width: 50%;">50%</div>
+    </div>
+    <br>
+
+    <div class="progress">
+        <div class="progress-bar bg-success" style="width: 40%;">40%</div>
+    </div>
+    <br>
+
+    <h2>Altura</h2>
+    <div class="progress" style="height: 50px;">
+        <div class="progress-bar bg-danger" style="width: 90%;"></div>
+    </div>
+    <br>    
+
+    <h2>Listrado</h2>
+    <div class="progress">
+        <div class="progress-bar bg-warning progress-bar-striped" style="width: 70%;">70%</div>
+    </div>
+    <br>
+
+    <h2>Animado</h2>
+    <div class="progress">
+        <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width: 70%;">70%</div>
+    </div>
+    <br>
+
+    <h2>Múltiplas barras</h2>
+    <div class="progress">
+        <div class="progress-bar bg-success" style="width: 20%;">Painel Principal(20% de 30)</div>
+        <div class="progress-bar bg-danger" style="width: 30%;">Fotos(30% de 30)</div>
+        <div class="progress-bar bg-warning" style="width: 15%;">Configurações(15%)</div>
+    </div>
+    
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>
