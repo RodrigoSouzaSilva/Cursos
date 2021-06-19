@@ -1,0 +1,21 @@
+* comando básicos para um bom desemprenho no terminal*
+
+GUI x CLI
+
+GUI -> grafic user interface    (imagem)
+CLI -> comande line interface	(linha de comando)
+
+windows:
+-cd
+-dir
+-mkdir
+-del/ rmdir
+
+Unix:
+-cd
+-ls
+-mkdir
+-rm -rf
+
+dir = tras as pastas contidas no diretório
+
