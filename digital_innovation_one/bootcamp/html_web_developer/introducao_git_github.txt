@@ -55,3 +55,55 @@ a encriptação gera conunto de characteres identificador de 40 dígitos
 openssl sha1 = para pegar o codigo sha1 de 40 characteres identificador
 openssl sha1 introducao_git_github.txt
 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+*** Primeiros comandos com Git ***
+
+git init = inicia um repositorio git
+
+git add = para mover arquivo e começar o versionamento
+
+git commit = cria o primeiro commit
+
+ls = listas os arquivos dentro de uma pasta
+
+dir -a = (flags) para visualizar arquivos ocultos
+
+ctrl + l = limpa a tela
+
+git config --global user.email "seu@email.com" = para setar um email no git
+git config --global user.email "rodrigo_souza.91@hotmail.com"
+
+git config --global user.name Rodrigo = configuração para o nome
+
+
+=-=-=-=--=--=---=-=-=---=-=-=-=-=-=-=-=-=-=-=-=-
+
+*** Ciclo de vida dos arquivos no Git ***
+
+untracked -> unmodified -> modified -> staged
+
+untracked = não visto pelo git
+git init
+git add *
+git commit -m
+
+git status = ajuda a monitorar os estatus dos arquivos
+
+mv = para mover um arquivo de um para outro
+mv strogonoff.md ./receitas/
+
+=-=-=-=-=-=-=-=-=---=---=---=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+*** Introdução ao GitHub ***
+
+git config --list = lista as configurações do git
+
+git config --global --unset user.email = para resetar um email 
+
+git remote add origin <link_repositorio_criado> = para criar um repositorio no github(primeiro crie um repositorio e copie o link para fazer o ponteiro entre eles)
+
+git remote -v = listas as lista de repositorio remoto que tem cadastrado
+
+git push origin master= empurrar o repositorio local para remoto
