@@ -1,4 +1,4 @@
-* comando básicos para um bom desemprenho no terminal*
+*** comando básicos para um bom desemprenho no terminal ***
 
 GUI x CLI
 
@@ -18,4 +18,40 @@ Unix:
 -rm -rf
 
 dir = tras as pastas contidas no diretório
+
+cd = possibilita navegar entre as paginas
+
+cd .. = para retrocedor de onde estava
+
+cls = para limpar a tela
+
+tecla tab = autocomplete o nome da pasta
+
+mkdir = cria uma pasta
+mkdir nome_da_pasta
+mkdir workspace
+
+echo = printa no terminal o que foi passado
+echo hello
+
+> = joga o que foi feito em algo, caso não tenha ele criará o arquivo
+echo hello > hello.txt
+
+del = deleta apenas os arquios da pasta
+del workspace
+
+rmdir = deleta o repositório completo, tanto pasta como os arquivos
+rmdir workspace
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+*** Entendendo como o Git funciona por baixo dos panos ***
+
+sigla sha - secure hash algorithm (algoritmo de hash seguro)
+a encriptação gera conunto de characteres identificador de 40 dígitos
+
+openssl sha1 = para pegar o codigo sha1 de 40 characteres identificador
+openssl sha1 introducao_git_github.txt
 
