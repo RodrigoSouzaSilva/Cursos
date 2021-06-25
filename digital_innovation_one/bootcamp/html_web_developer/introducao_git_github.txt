@@ -107,3 +107,10 @@ git remote add origin <link_repositorio_criado> = para criar um repositorio no g
 git remote -v = listas as lista de repositorio remoto que tem cadastrado
 
 git push origin master= empurrar o repositorio local para remoto
+
+
+=-=-=-=-=-=-=-=-=---=---=-=-=-=---=-=-=-=-=-=-=-=-=
+
+git pull origin master = para puxar o repositorio
+
+git clone <link_git_hub> = para clonar um repositorio
