@@ -114,3 +114,14 @@ git push origin master= empurrar o repositorio local para remoto
 git pull origin master = para puxar o repositorio
 
 git clone <link_git_hub> = para clonar um repositorio
+
+
+==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+echo "# MySQL" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/RodrigoSouzaSilva/MySQL.git 
+git push -u origin main
