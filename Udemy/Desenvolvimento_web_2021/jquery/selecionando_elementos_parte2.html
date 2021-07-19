@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JQuery</title>
+
+
+        <!-- lincando jquery a versão minificada -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        
+        <input class="exemplo1" placeholder="input1">
+        <input placeholder="input2">
+        <input placeholder="input3">
+
+        <div class="lista1">
+            <div class="exemplo2">div 1</div>
+            <div class="exemplo2">div 2</div>
+            <div class="exemplo2">div 3</div>
+        </div>
+
+        <ul class="lista1">
+            <li class="exemplo1">opção 1</li>
+            <li class="exemplo2">opção 2</li>
+            <li>opção 3</li>
+        </ul>
+
+        <ul class="lista2">
+            <li class="exemplo1">opção 1</li>
+            <li class="exemplo2">opção 2</li>
+            <li>opção 3</li>
+        </ul>
+        
+    </body>
+
+    <script>
+        
+        //combinação de seletores
+
+            //selecionando elementos por tags específicas
+            console.log($('li.exemplo1'));
+
+            //selecionar elementos por classe de classe específicas
+            console.log($('.lista1 li.exemplo2'));
+
+
+        //atuação sobre o array de retorno dos elementos selecionados
+        console.log($('.lista1 .exemplo2'));
+        //:first = retorna apenas o primeiro elemento encontrado
+        //:last = retorna o ultimo elemento encontrado em uma selenção
+        //:even = retorna o indeces impares
+        //:odd = retorna o indeces pares
+
+        console.log($('.lista1 .exemplo2:first'));
+        console.log($('.lista1 .exemplo2:last'));
+        console.log($('.lista1 .exemplo2:even'));
+        console.log($('.lista1 .exemplo2:odd'));
+
+    </script>
+
+</html>
