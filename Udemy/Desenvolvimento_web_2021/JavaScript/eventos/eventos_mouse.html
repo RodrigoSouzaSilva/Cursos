@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Mouse</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <script>
+
+        function acao() {
+            alert('Teste')
+        }
+
+        function acao1() {
+            alert('Elemento foi clicado')
+        }
+
+        function acao2() {
+            alert('O curso do mouse, deixou a região do elemento')
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <!-- evento 1 click -->
+    <div onclick="acao()">
+    </div>
+    
+
+    <!-- evento 2 click -->
+    <div ondblclick="acao()">
+    </div>
+    
+
+    <!-- evento e disparado quando, o click sobre um determinado elemento e liberado -->
+    <div onmouseup="acao()">
+    </div>
+    
+
+    <!-- quando o cursor do mouse sobrepoem a região do elemento dentro do browser -->
+    <div onmouseover="acao()">
+    </div>
+    
+
+    <!-- quando o cursor do mouse sai da regiao da pagina ocupada pelo elemento html -->
+    <div onmouseout="acao()">
+    </div>
+    
+
+    <!-- multiplas ações -->
+    <div onclick="acao1()" onmouseout="acao2()" style="background: red;">
+    </div>
+
+    <!-- nem todo evento são suportado em alguns elementos, caso duvidas consultar w3schools -->
+    
+
+</body>
+</html>

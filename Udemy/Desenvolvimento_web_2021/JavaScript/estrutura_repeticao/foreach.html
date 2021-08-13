@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreach</title>
+
+    <script>
+
+    var lista_funcionarios = ['Vivivane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+
+    var f = function(valor, indice){
+        document.write(valor, indice)
+    }
+
+    lista_funcionarios.forEach(f)
+
+    //           == 2° MODELO ==
+    // console.log(lista_funcionarios)
+    // document.write(lista_funcionarios[3])
+
+    // lista_funcionarios.forEach(function(valor, indice, array){
+    //        console.log('indice: ' +indice +' Valor:' +valor)
+
+    //        if(valor == 'Lucas'){
+    //            array[indice] = 'Um novo valor'
+    //        }
+    //    })
+
+    //    console.log(lista_funcionarios)
+    //    document.write('<br>'+lista_funcionarios[3])
+
+    //         --== ATENÇÃO ==--
+    // O INDICE SÓ SERÁ LIDO SE ELE FOR MAIOR OU IGUAL A 0
+    // lista_funcionarios[3] = 'RODRIGO'  - OK
+    // lista_funcionarios[-3] = 'RODRIGO' - NÃO SERÁ LIDO
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
