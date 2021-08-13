@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    position: relative;
+    background: gray;
+}
+
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border:1px solid red;
+    display: block;
+}
+
+ul li:hover{
+    background: lightgrey;
+}
+
+ul ul{
+    position: absolute; /* cria uma posição para poder mexer no dropdown */
+    background: lightgrey;
+    display: none;     /* para o display não aparecer */
+}
+
+ul ul li{
+    display: block;
+    background: #e3e3e3;
+}
+
+/* aqui começa o stilo para criar o dropdown */
+
+ul li:hover ul{
+    display: block; /* quando passa o mouse aparece a lista */
+}

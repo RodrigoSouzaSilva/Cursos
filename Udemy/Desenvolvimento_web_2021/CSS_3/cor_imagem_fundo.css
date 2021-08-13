@@ -1,0 +1,28 @@
+.estilo1{
+
+    height: 500px;
+    width: 500px;
+
+    /* inseri uma imagem no corpo de quem receber */
+    background-image: url(logo_css_3.jpg);
+
+    /* imagem não ira repetir */
+    background-repeat: no-repeat;
+
+    /* imagem irá repetir somente no eixo x(hoizontal), y = repetir no eixo y(vertical) */
+    background-repeat: repeat-x;
+
+    /* imagem fica fixada no fundo da pagina, mesmo quando rola a pagina */
+    background-attachment: fixed;
+
+    /* acompanha a rolagem da tela */
+    background-attachment:scroll;
+
+    /* posicinamento da imagem
+    (left, center, right)
+    (top, center, botton) */
+    background-position: left bottom;
+
+    /* propriedades background juntas */
+    background: blue url(logo_css_3.jpg) no-repeat fixed left center;
+}

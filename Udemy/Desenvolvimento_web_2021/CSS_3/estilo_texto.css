@@ -1,0 +1,19 @@
+.texto1{
+
+    /* coloca a font em negrito */
+    font-weight: bold;
+
+    /* fonte em itálico */
+    font-style:italic;
+
+    /* texto  sublinhado */
+    text-decoration: underline;
+
+    /* texto linha acima */
+    text-decoration: overline;
+
+    /* define uma linha no meio do texto */
+    text-decoration:line-through;
+
+    font: bold 40px "Lucinda Grande";
+}

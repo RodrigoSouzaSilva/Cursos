@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Dropdown</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        :root{
+            --cor-fundo:rgb(34, 41, 37);
+            --cor-primaria: rgb(231, 241, 236);
+            --cor-hover: rgb(118,  180, 145); 
+        }
+
+        .dp-menu ul{
+            background-color: var(--cor-fundo);
+            
+        }
+
+        .dp-menu ul li{
+            display: inline;
+            position: relative;
+        }
+
+        .dp-menu ul li a{
+            display: inline-block;
+            color: var(--cor-primaria);
+            text-decoration: none;
+            padding: 10px;
+            transition: background .3s;
+        }
+
+        .dp-menu ul li a:hover{
+            background-color: var(--cor-hover);
+        }
+
+        /* sub-menu */
+        .dp-menu ul ul{
+            display: none;
+            left: 0;
+            position: absolute;
+        }
+
+        .dp-menu ul li:hover ul{
+            display: block;
+        }
+
+        .dp-menu ul ul{
+            width: 150px;
+        }
+
+        .dp-menu ul ul li a{
+            display: block;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <nav class="dp-menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Produtos</a>
+                <ul>
+                    <li><a href="">Jogos</a></li>
+                    <li><a href="">Filmes</a></li>
+                    <li><a href="">Animes</a></li>
+                    <li><a href="">Séries</a></li>
+                    <li><a href="">Notícias</a></li>
+                </ul>
+            </li>
+            <li><a href="">Contatos</a></li>
+            <li><a href="">Quem somos</a>
+                <ul>
+                    <li><a href="">Jogos</a></li>
+                    <li><a href="">Filmes</a></li>
+                    <li><a href="">Animes</a></li>
+                    <li><a href="">Séries</a></li>
+                    <li><a href="">Notícias</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+.borda{
+    /* bordas padrão */
+    border: 1px solid red;
+}
+
+.borda2{
+    /* esconde a borda, porem ela continuará lá */
+    border: hidden;
+}
+
+.borda3{
+    /* remove o efeito de borda */
+    border: none;
+}
+
+.borda4{
+    border: 15px solid blue;
+
+    /* aplica efeito a borda, pontilhado */
+    border-style: dotted;
+
+    /* efeito tracejado */
+    border-style: dashed;
+
+    /* efeito com duas linhas de borda */
+    border-style: double;
+
+    /* contorno externo e interno */
+    border-style: groove;
+
+    /* contorno interno e externo */
+    border-style: ridge;
+}
+
+.borda5{
+    border: 5px solid blue;
+
+    /* cores das linhas da borda (cima, direita, baixo e esquerda) */
+    border-color: red green blue yellow;
+}
+
+.borda6{
+    border: 5px solid blue;
+
+    /* define a espersura da tabela */
+    border-width: 15px 30px 50px 80px;
+}
