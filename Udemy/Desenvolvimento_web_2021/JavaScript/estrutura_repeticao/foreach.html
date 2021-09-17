@@ -8,33 +8,33 @@
 
     <script>
 
-    var lista_funcionarios = ['Vivivane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+        var lista_funcionarios = ['Vivivane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
 
-    var f = function(valor, indice){
-        document.write(valor, indice)
-    }
+        var f = function(valor, indice){
+            document.write(valor, indice)
+        }
 
-    lista_funcionarios.forEach(f)
+        lista_funcionarios.forEach(f)
 
-    //           == 2° MODELO ==
-    // console.log(lista_funcionarios)
-    // document.write(lista_funcionarios[3])
+        //           == 2° MODELO ==
+        // console.log(lista_funcionarios)
+        // document.write(lista_funcionarios[3])
 
-    // lista_funcionarios.forEach(function(valor, indice, array){
-    //        console.log('indice: ' +indice +' Valor:' +valor)
+        // lista_funcionarios.forEach(function(valor, indice, array){
+        //        console.log('indice: ' +indice +' Valor:' +valor)
 
-    //        if(valor == 'Lucas'){
-    //            array[indice] = 'Um novo valor'
-    //        }
-    //    })
+        //        if(valor == 'Lucas'){
+        //            array[indice] = 'Um novo valor'
+        //        }
+        //    })
 
-    //    console.log(lista_funcionarios)
-    //    document.write('<br>'+lista_funcionarios[3])
+        //    console.log(lista_funcionarios)
+        //    document.write('<br>'+lista_funcionarios[3])
 
-    //         --== ATENÇÃO ==--
-    // O INDICE SÓ SERÁ LIDO SE ELE FOR MAIOR OU IGUAL A 0
-    // lista_funcionarios[3] = 'RODRIGO'  - OK
-    // lista_funcionarios[-3] = 'RODRIGO' - NÃO SERÁ LIDO
+        //         --== ATENÇÃO ==--
+        // O INDICE SÓ SERÁ LIDO SE ELE FOR MAIOR OU IGUAL A 0
+        // lista_funcionarios[3] = 'RODRIGO'  - OK
+        // lista_funcionarios[-3] = 'RODRIGO' - NÃO SERÁ LIDO
 
 
     </script>
