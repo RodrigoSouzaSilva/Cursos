@@ -2,10 +2,10 @@
 var data = new Date
 
 //getDate - retorna o dia do sistema
-document.write(data.getDate())
+console.log(data.getDate())
 
 //getMonth - recuperar o mês de 0 a 11
-document.write(data.getMonth()+1)
+console.log(data.getMonth()+1)
 
 //getMonth - recuperar o ano
-document.write(data.getFullYear())   
+console.log(data.getFullYear())   

@@ -1,7 +1,7 @@
 x =  11
 
         do {
-            document.write(x + '<br>')
+            console.log(x + '<br>');
 
             //break
             //continue

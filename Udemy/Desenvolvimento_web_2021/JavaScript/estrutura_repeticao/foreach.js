@@ -1,7 +1,7 @@
 var lista_funcionarios = ['Vivivane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
 
     var f = function(valor, indice){
-        document.write(valor, indice)
+        console.log(valor, indice);
     }
 
     lista_funcionarios.forEach(f)

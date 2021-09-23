@@ -1,6 +1,6 @@
 var x = 1
 
-        document.write('--== Início ==-- <br>')
+        console.log('--== Início ==--');
 
         while(x <= 10){
            
@@ -9,9 +9,8 @@ var x = 1
             continue
            }
 
-           document.write(x + '<br>')
            console.log(x)
            x++
         }
 
-        document.write('--== Fim ==--<br>')
+        console.log('--== Fim ==--')

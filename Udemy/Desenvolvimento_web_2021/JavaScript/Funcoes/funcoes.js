@@ -5,9 +5,9 @@ function calcularAreaTerreno ( largura, comprimento){
     return area
 }
 
-var largura = parseInt(prompt('Digite a largura do terreno em metros: '))
-var comprimento = parseInt(prompt('Digite o comprimento do terreno em metros: '))
+var largura = 45
+var comprimento = 15
 
 var area = calcularAreaTerreno(largura, comprimento)
 
-document.write('O terreno possui ' + area + ' metros quadrados.')
+console.log('O terreno possui ' + area + ' metros quadrados.')

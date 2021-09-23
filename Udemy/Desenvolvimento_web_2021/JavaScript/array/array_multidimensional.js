@@ -8,4 +8,4 @@ var lista_coisa = Array()
         lista_coisa['pessoas']['b'] = 'José'
         lista_coisa['pessoas']['c'] = 'Maria'
         
-        document.write(lista_coisa['pessoas']['b'])
+      console.log(lista_coisa['pessoas']['b']);

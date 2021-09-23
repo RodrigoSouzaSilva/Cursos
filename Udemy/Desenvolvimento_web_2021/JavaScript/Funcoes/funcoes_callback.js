@@ -8,13 +8,13 @@ function exibirArtigo(id, callbackSucesso, callbackErro){
 } 
 
 var callbackSucesso = function(titulo, descricao){
- document.write('<h1>'+titulo+ '</h1>')
- document.write('<hr>')
- document.write('<p>'+descricao+ '</p>')
+ console.log('<h1>'+titulo+ '</h1>')
+ console.log('<hr>')
+ console.log('<p>'+descricao+ '</p>')
 }
 
 var callbackErro = function(erro){
- document.write('<p><b>Erro</b> '+erro+'</p>')
+    console.log('<p><b>Erro</b> '+erro+'</p>')
 }
 
 exibirArtigo(1, callbackSucesso, callbackErro)

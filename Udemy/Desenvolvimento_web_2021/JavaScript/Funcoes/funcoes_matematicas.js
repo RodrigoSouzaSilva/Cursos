@@ -10,4 +10,4 @@ var a = Math.round(10.480)
 //Math.random() - número randomico entre 0 e 1
 var b = Math.random()
 
-document.write(b)
+console.log(b)

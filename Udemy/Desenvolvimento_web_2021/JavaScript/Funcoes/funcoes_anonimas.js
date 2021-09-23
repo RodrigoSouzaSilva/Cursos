@@ -1,5 +1,5 @@
 var exibirSaudacao = function (nome) {
-    document.write('Olá '+ nome + ', tudo bem?')
+    console.log('Olá '+ nome + ', tudo bem?')
 }
 
 exibirSaudacao('Rodrigo')

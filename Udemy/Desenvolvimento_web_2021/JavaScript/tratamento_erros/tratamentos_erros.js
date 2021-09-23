@@ -1,5 +1,5 @@
 //netflix
-var video =Array()
+var video = Array()
 
 video[1] = Array()
 video[1]['nome'] = 'Fullmetal Alchemist'
