@@ -2,17 +2,40 @@ const inputTarefa = document.querySelector('.input-tarefa');
 const btnTarefa = document.querySelector('.btn-tarefa');
 const tarefas = document.querySelector('.tarefas');
 
-function criaLi(){
-    const li = document.createElement('li');
-    return li; //li desta função, diferente do outro
-}
+btnTarefa.addEventListener('click', function(){
+    if (!inputTarefa.value) return; //se for vazio nada acontece
+    criaTarefa(inputTarefa.value); //joga o texto pra outra função
+});
 
-inputTarefa.addEventListener('keypress', function(e){ //vigiando a tecla ENTer
+inputTarefa.addEventListener('keypress', function(e){ //vigiando a tecla ENTER
     if(e.keyCode === 13){
         if (!inputTarefa.value) return;
         criaTarefa(inputTarefa.value);
     }
 });
+
+document.addEventListener('click', function(e){ // apaga a li se tiver a classe apagar quando clicar
+    const el = e.target;
+    
+    if (el.classList.contains('apagar')){
+        el.parentElement.remove();
+        salvarTarefas();
+    }
+})
+
+function criaTarefa(textoInput){
+    const li = criaLi();  //li desta função, diferente o outro
+    li.innerText = textoInput;
+    tarefas.appendChild(li);
+    limpaInput();
+    criaBotaoApagar(li);
+    salvarTarefas();
+}
+
+function criaLi(){
+    const li = document.createElement('li');
+    return li; //li desta função, diferente do outro
+}
 
 function limpaInput(){
     inputTarefa.value = '';
@@ -29,30 +52,7 @@ function criaBotaoApagar(li){
     li.appendChild(botaoApagar);
 }
 
-function criaTarefa(textoInput){
-    const li = criaLi();  //li desta função, diferente o outro
-    li.innerText = textoInput;
-    tarefas.appendChild(li);
-    limpaInput();
-    criaBotaoApagar(li);
-    salvarTarefas();
-}
-
-btnTarefa.addEventListener('click', function(){
-    if (!inputTarefa.value) return; //se for vazio nada acontece
-    criaTarefa(inputTarefa.value); //joga o texto pra outra função
-});
-
-document.addEventListener('click', function(e){
-    const el = e.target;
-    
-    if (el.classList.contains('apagar')){
-        el.parentElement.remove();
-        salvarTarefas();
-    }
-})
-
-function salvarTarefas() {
+function salvarTarefas() {      // salvar no JSON
     const liTarefas = tarefas.querySelectorAll('li');
     const listaDeTarefas = [];
 
@@ -66,7 +66,7 @@ function salvarTarefas() {
     localStorage.setItem('tarefas', tarefasJSON);
 }
 
-function adicionaTarefasSalvas(){
+function adicionaTarefasSalvas(){   // Recuperar no JSON
     const tarefas = localStorage.getItem('tarefas');
     const listaDeTarefas = JSON.parse(tarefas);
     
