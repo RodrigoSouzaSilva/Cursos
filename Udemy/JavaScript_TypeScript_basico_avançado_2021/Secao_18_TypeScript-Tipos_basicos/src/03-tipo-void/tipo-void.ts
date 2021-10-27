@@ -1,18 +1,17 @@
-function semRetorno(...args:string[]){
-    console.log(args.join(' + '));
+function semRetorno(...args: string[]) {
+  console.log(args.join(' + '));
 }
 
 const pessoa = {
-    nome: 'Luiz',
-    sobrenome: 'Otavio',
+  nome: 'Luiz',
+  sobrenome: 'Otavio',
 
+  exibirNome(): void {
+    console.log(this.nome + ' ' + this.sobrenome);
+  },
+};
 
-    exibirNome():void {
-        console.log(this.nome + ' ' +this.sobrenome)
-    }
-}
+semRetorno('Luiz', 'Otavio');
+pessoa.exibirNome();
 
-semRetorno('Luiz', 'Otavio')
-pessoa.exibirNome()
-
-export { pessoa }
+export { pessoa };
